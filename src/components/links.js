@@ -9,6 +9,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import resume from '../resume.jpeg';
 
 class Links extends React.Component {
   render() {
@@ -19,25 +20,41 @@ class Links extends React.Component {
       <header className="topBar">
           <Button href="/" >Home</Button>
           <Button href="/about">About Me</Button>
+          <Button href="/resume">Resume</Button>
           <Button href="/socials">Socials</Button>
-          <Button onclick="/resume">Resume</Button>
+          
           </header></header>
         <Switch>
         <Route path="/about">
           <header className="welcome"> 
-          I'm a student studying CS and Economics at The Univeristy of Queensland. <p></p>
+          I'm studying CS and Economics at The Univeristy of Queensland. <p></p>
           <header className="body-aboutme">
-          I'm in my second last year of studying and I major in machine learning. I write in alot of Java, C and Python. <br></br>
-          Outside of coding I'm love to play guitar, moss out and smoke cones. If anyone has ket hmu.
+          I'm in my second last year of studying and I major in machine learning. I write a lot of Python, Java, and C. <br></br>
+          Outside of coding, I love to play guitar.
           </header>
           </header>
         </Route>
         <Route path="/socials">
         <header className="App-header"><header className="socials"><SimpleList /></header></header>
         </Route>
+        <Route path="/resume">
+        <header className="App-header"><header className="resume">
+          Software engineer at FuelzFoods Pty Ltd <font size="2">(Dec 2019 - Current)</font>
+          <header className="body-aboutme">I write backend software to solve optimisation issues in the supply chain process.</header>
+          <p></p>Data Analyst at Kros Holdings Pty Ltd <font size="2">(Nov 2018 - Feb 2019)</font>
+          <header className="body-aboutme">Involved the analysis of financial data to identify business growth trends.</header>
+          
+          <br></br><br></br><p></p><p></p> I currently hold a GPA of 6.5/7.0 and have recieved 2 Dean's commendations for Academic Excellence.
+          </header>
+          </header>
+          
+
+          </Route>
+
+
         <Route path="/">
           <header className="welcome"> 
-            <p>Hi! I'm Alex.</p>I like to program things. 
+            <p>Hi! I'm Alex.</p><small>I like to program stuff.</small>
           </header>
         </Route>
       </Switch>

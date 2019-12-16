@@ -1,11 +1,12 @@
 .App {
   text-align: center;
-  max-height: -10px;
+  background-size:cover;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  background-size:cover;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -36,19 +37,28 @@
 
 .body-aboutme{
   font-size: 16px;
+  color: white;
 }
 
 .socials {
   top: 10px;
-  margin-top: -700px;
+  margin-top: -650px;
+  margin-left: 175px;
 }
 
 .Background {
-  background-Image: url("./background.jpeg");
+  background-image: url("./background.jpeg");
   background-repeat: no-repeat;
   background-size:cover;
-  max-height: 600px;
+  
   min-height: 600px;
+}
+
+.resume{
+  font: 30px;
+  margin-top: -750px;
+  color: white;
+  
 }
 
 .App-header {
@@ -66,3 +76,6 @@
   color: #61dafb;
 }
 
+.contactsbox{
+  margin-left: 24px;
+}

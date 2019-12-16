@@ -13,6 +13,8 @@ import {
   Link
 } from "react-router-dom";
 
+document.title = 'Alex Patapan';
+
 function App() {
   return (  
     

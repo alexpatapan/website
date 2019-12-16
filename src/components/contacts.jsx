@@ -12,14 +12,16 @@ import { ReactComponent as GitHubLogo } from '../github.svg';
 import { ReactComponent as LinkedInLogo } from '../linkedin.svg';
 import { grey } from '@material-ui/core/colors';
 import { height } from '@material-ui/system';
+import '../App.css';
+
 
 const useStyles = makeStyles(theme => ({
     root: {
       width: '100%',
-      maxWidth: 200,
+      maxWidth: 190,
       background: 'rgba(204, 204, 204, 0.86)',
       'border-radius': '15px',
-      'padding-top': '-1000px',
+      'margin-right':'190px',
       
     },
   }));
@@ -33,26 +35,28 @@ function ListItemLink(props) {
   
     return (
       <div className={classes.root}>
-        <List component="nav" aria-label="main mailbox folders">
+        <List disablePadding="true" component="nav" aria-label="main mailbox folders">
+        
         <ListItem button component="a" href="http://github.com/alexpatapan">
+        <header className="contactsbox">
             <ListItemIcon>
               <GitHubLogo />
-            </ListItemIcon>
-            <ListItemText primary="GitHub" />
+            </ListItemIcon></header>
             
-          </ListItem>
+            <ListItemText primary="GitHub" />
+            </ListItem>
           
           <ListItem button component="a" href="https://www.linkedin.com/in/alex-patapan-33279016a/">
-            <ListItemIcon>
+          <header className="contactsbox"><ListItemIcon>
               <LinkedInLogo />
-            </ListItemIcon>
+            </ListItemIcon></header>
             <ListItemText primary="LinkedIn" />
           </ListItem>
         
           <ListItem button component="a" href="mailto:alexpatapan@gmail.com" alignItems="flex-start">
-            <ListItemIcon>
+          <header className="contactsbox"><ListItemIcon>
               <DraftsIcon style={{ color: grey[900] }}/>
-            </ListItemIcon>
+            </ListItemIcon></header>
             <ListItemText primary="Email" />
           </ListItem>
         </List>
