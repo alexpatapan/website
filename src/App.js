@@ -18,13 +18,7 @@ function App() {
     
     <div className="App">
     <header className="Background">
-    <header className="App-header">
-    
-      <header className="topBar">
         <Links />
-      </header>
-      </header>
-        
       </header>
     </div>
   );

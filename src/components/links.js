@@ -15,15 +15,21 @@ class Links extends React.Component {
     return (
       <div className="links">
       <Router>
+      <header className="App-header">
+      <header className="topBar">
           <Button href="/" >Home</Button>
           <Button href="/about">About Me</Button>
           <Button href="/socials">Socials</Button>
           <Button onclick="/resume">Resume</Button>
-
+          </header></header>
         <Switch>
         <Route path="/about">
           <header className="welcome"> 
-          I'm a student studying CS and Economics at The Univeristy of Queensland.
+          I'm a student studying CS and Economics at The Univeristy of Queensland. <p></p>
+          <header className="body-aboutme">
+          I'm in my second last year of studying and I major in machine learning. I write in alot of Java, C and Python. <br></br>
+          Outside of coding I'm love to play guitar, moss out and smoke cones. If anyone has ket hmu.
+          </header>
           </header>
         </Route>
         <Route path="/socials">
@@ -36,7 +42,7 @@ class Links extends React.Component {
         </Route>
       </Switch>
 
-
+      
       </Router>
       </div>
 

@@ -21,7 +21,7 @@
   height: 35px;
   text-align: justify;
   top: 90px;
-  margin-top: 525px;
+  margin-top: 545px;
   max-width: 400px;
 }
 
@@ -31,11 +31,16 @@
   text-align: center;
   align-items: center;
   margin-top: -400px;
+  font-size: 22px;
+}
+
+.body-aboutme{
+  font-size: 16px;
 }
 
 .socials {
   top: 10px;
-  margin-top: -1230px;
+  margin-top: -700px;
 }
 
 .Background {
@@ -43,10 +48,10 @@
   background-repeat: no-repeat;
   background-size:cover;
   max-height: 600px;
+  min-height: 600px;
 }
 
 .App-header {
-  min-height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
