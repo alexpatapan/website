@@ -3,20 +3,28 @@ import logo from './logo.svg';
 import './App.css';
 import SimpleList from './components/contacts.jsx';
 import Background from './background.jpeg'; 
-
+import Links from './components/links.js'
+import Button from '@material-ui/core/Button';
+import AboutMe from "./components/aboutme.jsx"; 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (  
+    
     <div className="App">
     <header className="Background">
-    <header className="topBar">Home</header>
     <header className="App-header">
     
-      <header className="welcome"> 
-        <p>Hi! I'm Alex.</p>
+      <header className="topBar">
+        <Links />
       </header>
-        <SimpleList />
       </header>
+        
       </header>
     </div>
   );

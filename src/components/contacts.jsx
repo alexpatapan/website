@@ -11,15 +11,15 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 import { ReactComponent as GitHubLogo } from '../github.svg';
 import { ReactComponent as LinkedInLogo } from '../linkedin.svg';
 import { grey } from '@material-ui/core/colors';
-import { isWhiteSpaceLike } from 'typescript';
 import { height } from '@material-ui/system';
 
 const useStyles = makeStyles(theme => ({
     root: {
       width: '100%',
       maxWidth: 200,
-      background: 'rgba(204, 204, 204, 1)',
+      background: 'rgba(204, 204, 204, 0.86)',
       'border-radius': '15px',
+      'padding-top': '-1000px',
       
     },
   }));
