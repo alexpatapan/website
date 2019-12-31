@@ -1,7 +1,6 @@
 .App {
   text-align: center;
   position:relative;
-  
 }
 
 .App-logo {
@@ -19,12 +18,10 @@
   background: rgba(204, 204, 204, 0.86);
   align-items: center;
   color: black;
-  height: 35px;
   width: 314px;
- 
   text-align: justify;
   margin-top: 530.5px;
-  
+  display: flex;
 }
 
 .welcome {
@@ -42,7 +39,7 @@
 .body-aboutme{
   color: white;
   font-size: calc(9px + 0.5vw);
-  
+
 }
 
 .socials {
@@ -51,16 +48,28 @@
   margin-left: 175px;
 }
 
+.background-video {
+  position: fixed;
+  filter: blur(6px) brightness(70%);
+ 
+  transform: scale(1.2);
+  left: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 0;
+}
+
+
 .Background {
-  background-image: url("./background.jpeg");
+  /*background-image: url("./background.jpeg");
   background-repeat: repeat-y;
-  background-size:cover;
+  background-size:cover;*/
   min-height: 40vw;
-  min-width:700px;
   height: 100%;
   width: 100%;
   position:fixed;
-  overflow:scroll;
+  
 }
 
 .resume{
@@ -78,7 +87,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
-  
 }
 
 .App-link {

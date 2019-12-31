@@ -23,7 +23,7 @@ class Links extends React.Component {
           <Button href="/resume" >Resume</Button>
           <Button href="/socials">Socials</Button>
           
-          </header></header>
+      </header></header>
         <Switch>
         <Route path="/about">
           <header className="welcome"> <p></p>
