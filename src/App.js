@@ -2,11 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import SimpleList from './components/contacts.jsx';
-import Background from './background.jpeg'; 
 import Links from './components/links.js'
 import Button from '@material-ui/core/Button';
 import AboutMe from "./components/aboutme.jsx"; 
-import backgroundgif from './bgif.mp4';
 import {
   BrowserRouter as Router,
   Switch,

@@ -9,7 +9,6 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import resume from '../resume.jpeg';
 
 class Links extends React.Component {
   render() {
@@ -47,7 +46,7 @@ class Links extends React.Component {
           <p></p>Data Analyst at Kros Holdings Pty Ltd <font size="2">(Nov 2018 - Feb 2019)</font>
           <header className="body-aboutme">Involved the analysis of financial data to identify business growth trends.</header>
           
-          <br></br>I currently hold a GPA of 6.5/7.0 and have received two Dean's commendations for Academic Excellence.
+          <br></br><br></br>I currently hold a GPA of 6.5/7.0 and have received two Dean's commendations for Academic Excellence.
           <p></p>I am also a recognised scholar of the Faculty of Engineering at UQ.</header>
           </header>
           
